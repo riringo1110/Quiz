@@ -15,6 +15,9 @@
 		E0796F9625D6E5CC00BC634A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0796F9425D6E5CC00BC634A /* LaunchScreen.storyboard */; };
 		E0796FA125D6E5CC00BC634A /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0796FA025D6E5CC00BC634A /* QuizTests.swift */; };
 		E0796FAC25D6E5CC00BC634A /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0796FAB25D6E5CC00BC634A /* QuizUITests.swift */; };
+		E0796FBD25D6E62100BC634A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0796FBC25D6E62100BC634A /* QuizViewController.swift */; };
+		E0796FC225D6E63800BC634A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0796FC125D6E63800BC634A /* ResultViewController.swift */; };
+		E0796FC825D6E7F900BC634A /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0796FC725D6E7F900BC634A /* misaki_gothic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E0796FA725D6E5CC00BC634A /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0796FAB25D6E5CC00BC634A /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		E0796FAD25D6E5CC00BC634A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0796FBC25D6E62100BC634A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		E0796FC125D6E63800BC634A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E0796FC725D6E7F900BC634A /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				E0796F9225D6E5CC00BC634A /* Assets.xcassets */,
 				E0796F9425D6E5CC00BC634A /* LaunchScreen.storyboard */,
 				E0796F9725D6E5CC00BC634A /* Info.plist */,
+				E0796FBC25D6E62100BC634A /* QuizViewController.swift */,
+				E0796FC125D6E63800BC634A /* ResultViewController.swift */,
+				E0796FC625D6E7F900BC634A /* Fonts */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -126,6 +135,14 @@
 				E0796FAD25D6E5CC00BC634A /* Info.plist */,
 			);
 			path = QuizUITests;
+			sourceTree = "<group>";
+		};
+		E0796FC625D6E7F900BC634A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E0796FC725D6E7F900BC634A /* misaki_gothic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0796FC825D6E7F900BC634A /* misaki_gothic.ttf in Resources */,
 				E0796F9625D6E5CC00BC634A /* LaunchScreen.storyboard in Resources */,
 				E0796F9325D6E5CC00BC634A /* Assets.xcassets in Resources */,
 				E0796F9125D6E5CA00BC634A /* Main.storyboard in Resources */,
@@ -258,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0796FC225D6E63800BC634A /* ResultViewController.swift in Sources */,
 				E0796F8E25D6E5CA00BC634A /* ViewController.swift in Sources */,
 				E0796F8A25D6E5CA00BC634A /* AppDelegate.swift in Sources */,
 				E0796F8C25D6E5CA00BC634A /* SceneDelegate.swift in Sources */,
+				E0796FBD25D6E62100BC634A /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,7 +477,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +487,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
